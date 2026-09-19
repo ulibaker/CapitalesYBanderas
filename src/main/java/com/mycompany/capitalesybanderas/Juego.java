@@ -21,6 +21,15 @@ public class Juego extends javax.swing.JFrame {
     
     public Juego() {
         initComponents();
+        CBtn.registerKeyboardAction(
+            e -> {
+                NBtn.doClick();
+                CBtn.doClick();
+                TFld1.requestFocusInWindow();
+            },
+            javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ENTER, 0),
+            javax.swing.JComponent.WHEN_IN_FOCUSED_WINDOW
+        );
         FlagLbl.setFont(new Font("Microsoft YaHei", Font.PLAIN, 250));   
         setLocationRelativeTo(null);
         setTitle("Capitales y Banderas!");
@@ -248,6 +257,7 @@ public class Juego extends javax.swing.JFrame {
         Image imgEscalada = img.getScaledInstance(FlagLbl.getWidth(), FlagLbl.getHeight(), Image.SCALE_SMOOTH);
         FlagLbl.setIcon(new ImageIcon(imgEscalada));
         
+        
         update();
         NBtn.setEnabled(false);
         WLbl.setVisible(false);
@@ -258,6 +268,7 @@ public class Juego extends javax.swing.JFrame {
         num = genBanderas.obtenerAleatorio(); 
         //num =197;
         NLbl.setText(""+num);
+        HLbl.setText(mapaBanderas.get(num)[0].toLowerCase()+" "+mapaBanderas.get(num)[1].toLowerCase());
         String ruta = "/banderas/" + num + ".png";
         ImageIcon icon = new ImageIcon(getClass().getResource(ruta));
         Image img = icon.getImage();
@@ -285,6 +296,7 @@ public class Juego extends javax.swing.JFrame {
         PLbl1 = new javax.swing.JLabel();
         PLbl2 = new javax.swing.JLabel();
         NLbl = new javax.swing.JLabel();
+        HLbl = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -328,6 +340,9 @@ public class Juego extends javax.swing.JFrame {
         NLbl.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         NLbl.setText("n");
 
+        HLbl.setForeground(new java.awt.Color(240, 240, 240));
+        HLbl.setText("Hola");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -335,7 +350,7 @@ public class Juego extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 338, Short.MAX_VALUE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 388, Short.MAX_VALUE)
                     .addComponent(FlagLbl, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(CLbl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(WLbl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -352,6 +367,8 @@ public class Juego extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(NLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(HLbl)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel5)))
                 .addContainerGap())
         );
@@ -381,7 +398,8 @@ public class Juego extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(NLbl)
-                    .addComponent(jLabel5))
+                    .addComponent(jLabel5)
+                    .addComponent(HLbl))
                 .addContainerGap())
         );
 
@@ -412,6 +430,7 @@ public class Juego extends javax.swing.JFrame {
                 WLbl.setVisible(true);
             }       
         }
+        
     }//GEN-LAST:event_CBtnActionPerformed
 
     public static void main(String args[]) {
@@ -431,7 +450,7 @@ public class Juego extends javax.swing.JFrame {
             logger.log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-
+        
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> new Juego().setVisible(true));
     }
@@ -440,6 +459,7 @@ public class Juego extends javax.swing.JFrame {
     private javax.swing.JButton CBtn;
     private javax.swing.JLabel CLbl;
     private javax.swing.JLabel FlagLbl;
+    private javax.swing.JLabel HLbl;
     private javax.swing.JButton NBtn;
     private javax.swing.JLabel NLbl;
     private javax.swing.JLabel PLbl1;
