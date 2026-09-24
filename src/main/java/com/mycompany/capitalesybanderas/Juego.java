@@ -26,6 +26,7 @@ public class Juego extends javax.swing.JFrame {
                 NBtn.doClick();
                 CBtn.doClick();
                 TFld1.requestFocusInWindow();
+                WLbl.setVisible(false);
             },
             javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ENTER, 0),
             javax.swing.JComponent.WHEN_IN_FOCUSED_WINDOW
@@ -135,7 +136,7 @@ public class Juego extends javax.swing.JFrame {
         mapaBanderas.put(96, new String[]{"Kenia", "Nairobi"});
         mapaBanderas.put(97, new String[]{"Kirguistan", "Biskek"});
         mapaBanderas.put(98, new String[]{"Kiribati", "Tarawa del Sur"});
-        mapaBanderas.put(99, new String[]{"Kosovo", "Pristina"});
+        //mapaBanderas.put(99, new String[]{"Kosovo", "Pristina"});
         mapaBanderas.put(100, new String[]{"Kuwait", "Ciudad de Kuwait"});
         mapaBanderas.put(101, new String[]{"Laos", "Vientian"});
         mapaBanderas.put(102, new String[]{"Lesoto", "Maseru"});
@@ -176,7 +177,7 @@ public class Juego extends javax.swing.JFrame {
         mapaBanderas.put(137, new String[]{"Paises Bajos", "Amsterdam"});
         mapaBanderas.put(138, new String[]{"Pakistan", "Islamabad"});
         mapaBanderas.put(139, new String[]{"Palaos", "Ngerulmud"});
-        mapaBanderas.put(140, new String[]{"Palestina", "Jerusalen Este"});
+        //mapaBanderas.put(140, new String[]{"Palestina", "Jerusalen Este"});
         mapaBanderas.put(141, new String[]{"Panama", "Ciudad de Panama"});
         mapaBanderas.put(142, new String[]{"Papua Nueva Guinea", "Port Moresby"});
         mapaBanderas.put(143, new String[]{"Paraguay", "Asuncion"});
@@ -211,7 +212,7 @@ public class Juego extends javax.swing.JFrame {
         mapaBanderas.put(172, new String[]{"Suiza", "Berna"});
         mapaBanderas.put(173, new String[]{"Surinam", "Paramaribo"});
         mapaBanderas.put(174, new String[]{"Tailandia", "Bangkok"});
-        mapaBanderas.put(175, new String[]{"Taiwan", "Taipei"});
+        //mapaBanderas.put(175, new String[]{"Taiwan", "Taipei"});
         mapaBanderas.put(176, new String[]{"Tanzania", "Dodoma"});
         mapaBanderas.put(177, new String[]{"Tayikistan", "Dusambe"});
         mapaBanderas.put(178, new String[]{"Timor Oriental", "Dili"});
@@ -227,7 +228,7 @@ public class Juego extends javax.swing.JFrame {
         mapaBanderas.put(188, new String[]{"Uruguay", "Montevideo"});
         mapaBanderas.put(189, new String[]{"Uzbekistan", "Taskent"});
         mapaBanderas.put(190, new String[]{"Vanuatu", "Port Vila"});
-        mapaBanderas.put(191, new String[]{"Vaticano", "Vaticano"});
+        //mapaBanderas.put(191, new String[]{"Vaticano", "Vaticano"});
         mapaBanderas.put(192, new String[]{"Venezuela", "Caracas"});
         mapaBanderas.put(193, new String[]{"Vietnam", "Hanoi"});
         mapaBanderas.put(194, new String[]{"Yibuti", "Yibuti"});
@@ -235,15 +236,19 @@ public class Juego extends javax.swing.JFrame {
         mapaBanderas.put(196, new String[]{"Zambia", "Lusaka"});
         mapaBanderas.put(197, new String[]{"Zimbabue", "Harare"});
         
+        //99 kosovo
+        //140 palestina
+        //175 taiwan
+        //191 vaticano
         Integer[] FlagArray = {
             1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,
             26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,
             51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,
-            76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,
+            76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,100,
             101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,
-            126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,
-            151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,
-            176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197
+            126,127,128,129,130,131,132,133,134,135,136,137,138,139,141,142,143,144,145,146,147,148,149,150,
+            151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,
+            176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,192,193,194,195,196,197
         };
         
         genBanderas = new Generador<>(FlagArray);
@@ -263,7 +268,7 @@ public class Juego extends javax.swing.JFrame {
         WLbl.setVisible(false);
         CLbl.setVisible(false);
         }
-    private void update() { 
+    private void update() {
         FlagLbl.setText("");
         num = genBanderas.obtenerAleatorio(); 
         //num =197;
@@ -297,6 +302,7 @@ public class Juego extends javax.swing.JFrame {
         PLbl2 = new javax.swing.JLabel();
         NLbl = new javax.swing.JLabel();
         HLbl = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -343,6 +349,9 @@ public class Juego extends javax.swing.JFrame {
         HLbl.setForeground(new java.awt.Color(240, 240, 240));
         HLbl.setText("Hola");
 
+        jButton1.setText("Volver");
+        jButton1.addActionListener(this::jButton1ActionPerformed);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -350,7 +359,7 @@ public class Juego extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 388, Short.MAX_VALUE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 438, Short.MAX_VALUE)
                     .addComponent(FlagLbl, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(CLbl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(WLbl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -368,6 +377,8 @@ public class Juego extends javax.swing.JFrame {
                         .addComponent(NLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(HLbl)
+                        .addGap(12, 12, 12)
+                        .addComponent(jButton1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel5)))
                 .addContainerGap())
@@ -377,9 +388,9 @@ public class Juego extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(FlagLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
+                .addComponent(FlagLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(CLbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(WLbl)
@@ -395,11 +406,13 @@ public class Juego extends javax.swing.JFrame {
                     .addComponent(PLbl2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(CBtn)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(NLbl)
-                    .addComponent(jLabel5)
-                    .addComponent(HLbl))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(NLbl)
+                        .addComponent(HLbl)
+                        .addComponent(jButton1))
+                    .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addContainerGap())
         );
 
@@ -432,6 +445,11 @@ public class Juego extends javax.swing.JFrame {
         }
         
     }//GEN-LAST:event_CBtnActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        this.dispose();
+        new Ventana().setVisible(true);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -467,6 +485,7 @@ public class Juego extends javax.swing.JFrame {
     private javax.swing.JTextField TFld1;
     private javax.swing.JTextField TFld2;
     private javax.swing.JLabel WLbl;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel5;
     // End of variables declaration//GEN-END:variables

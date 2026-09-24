@@ -217,7 +217,7 @@ public class Ventana extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void PBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PBtnActionPerformed
-        this.dispose();;
+        this.dispose();
         new Juego().setVisible(true);
     }//GEN-LAST:event_PBtnActionPerformed
 
@@ -226,7 +226,8 @@ public class Ventana extends javax.swing.JFrame {
     }//GEN-LAST:event_PBtn1ActionPerformed
 
     private void PBtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PBtn2ActionPerformed
-        // TODO add your handling code here:
+        this.dispose();
+        new JuegoLimRecon().setVisible(true);
     }//GEN-LAST:event_PBtn2ActionPerformed
 
     private void PBtn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PBtn3ActionPerformed
