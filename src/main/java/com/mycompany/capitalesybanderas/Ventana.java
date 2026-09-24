@@ -63,9 +63,9 @@ public class Ventana extends javax.swing.JFrame {
         jLabel3.setText("Estados con reconocimiento limitado.");
 
         PBtn1.setBackground(new java.awt.Color(0, 0, 0));
-        PBtn1.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
+        PBtn1.setFont(new java.awt.Font("Consolas", 1, 16)); // NOI18N
         PBtn1.setForeground(new java.awt.Color(255, 255, 255));
-        PBtn1.setText("JUGAR!");
+        PBtn1.setText("Insular");
         PBtn1.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         PBtn1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         PBtn1.addActionListener(this::PBtn1ActionPerformed);
@@ -82,41 +82,41 @@ public class Ventana extends javax.swing.JFrame {
         PBtn2.addActionListener(this::PBtn2ActionPerformed);
 
         PBtn3.setBackground(new java.awt.Color(0, 0, 0));
-        PBtn3.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
+        PBtn3.setFont(new java.awt.Font("Consolas", 1, 16)); // NOI18N
         PBtn3.setForeground(new java.awt.Color(255, 255, 255));
-        PBtn3.setText("JUGAR!");
+        PBtn3.setText("Islamico");
         PBtn3.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         PBtn3.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         PBtn3.addActionListener(this::PBtn3ActionPerformed);
 
         PBtn4.setBackground(new java.awt.Color(0, 0, 0));
-        PBtn4.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
+        PBtn4.setFont(new java.awt.Font("Consolas", 1, 16)); // NOI18N
         PBtn4.setForeground(new java.awt.Color(255, 255, 255));
-        PBtn4.setText("JUGAR!");
+        PBtn4.setText("Asia");
         PBtn4.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         PBtn4.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         PBtn4.addActionListener(this::PBtn4ActionPerformed);
 
         PBtn5.setBackground(new java.awt.Color(0, 0, 0));
-        PBtn5.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
+        PBtn5.setFont(new java.awt.Font("Consolas", 1, 16)); // NOI18N
         PBtn5.setForeground(new java.awt.Color(255, 255, 255));
-        PBtn5.setText("JUGAR!");
+        PBtn5.setText("Subsahariana");
         PBtn5.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         PBtn5.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         PBtn5.addActionListener(this::PBtn5ActionPerformed);
 
         PBtn6.setBackground(new java.awt.Color(0, 0, 0));
-        PBtn6.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
+        PBtn6.setFont(new java.awt.Font("Consolas", 1, 16)); // NOI18N
         PBtn6.setForeground(new java.awt.Color(255, 255, 255));
-        PBtn6.setText("JUGAR!");
+        PBtn6.setText("Occidente");
         PBtn6.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         PBtn6.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         PBtn6.addActionListener(this::PBtn6ActionPerformed);
 
         PBtn7.setBackground(new java.awt.Color(0, 0, 0));
-        PBtn7.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
+        PBtn7.setFont(new java.awt.Font("Consolas", 1, 16)); // NOI18N
         PBtn7.setForeground(new java.awt.Color(255, 255, 255));
-        PBtn7.setText("JUGAR!");
+        PBtn7.setText("LATAM");
         PBtn7.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         PBtn7.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         PBtn7.addActionListener(this::PBtn7ActionPerformed);
@@ -153,28 +153,28 @@ public class Ventana extends javax.swing.JFrame {
                         .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(PBtn, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 388, Short.MAX_VALUE)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(PBtn2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(PBtn4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(PBtn1)
-                                .addGap(28, 28, 28)
-                                .addComponent(PBtn3))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(PBtn7)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(PBtn5)
-                                .addGap(28, 28, 28)
-                                .addComponent(PBtn6))
                             .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(PBtn8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(PBtn8, javax.swing.GroupLayout.DEFAULT_SIZE, 185, Short.MAX_VALUE)
                                 .addGap(18, 18, 18)
-                                .addComponent(PBtn9, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addComponent(PBtn9, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(PBtn7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(PBtn4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(PBtn1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(PBtn5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(PBtn3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(PBtn6, javax.swing.GroupLayout.DEFAULT_SIZE, 136, Short.MAX_VALUE))))))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -195,8 +195,8 @@ public class Ventana extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(PBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(PBtn3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(PBtn4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(PBtn4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(PBtn3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(PBtn5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
