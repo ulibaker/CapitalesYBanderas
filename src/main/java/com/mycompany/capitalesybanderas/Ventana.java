@@ -222,7 +222,8 @@ public class Ventana extends javax.swing.JFrame {
     }//GEN-LAST:event_UNBtnActionPerformed
 
     private void IsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IsBtnActionPerformed
-        // TODO add your handling code here:
+        this.dispose();
+        new Islam().setVisible(true);
     }//GEN-LAST:event_IsBtnActionPerformed
 
     private void LRBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LRBtnActionPerformed
