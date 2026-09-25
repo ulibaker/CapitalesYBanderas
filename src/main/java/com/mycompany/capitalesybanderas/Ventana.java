@@ -21,20 +21,20 @@ public class Ventana extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        PBtn = new javax.swing.JButton();
+        UNBtn = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        PBtn1 = new javax.swing.JButton();
+        IsBtn = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
-        PBtn2 = new javax.swing.JButton();
-        PBtn3 = new javax.swing.JButton();
-        PBtn4 = new javax.swing.JButton();
-        PBtn5 = new javax.swing.JButton();
-        PBtn6 = new javax.swing.JButton();
-        PBtn7 = new javax.swing.JButton();
+        LRBtn = new javax.swing.JButton();
+        LaBtn = new javax.swing.JButton();
+        AsBtn = new javax.swing.JButton();
+        SuBtn = new javax.swing.JButton();
+        OcBtn = new javax.swing.JButton();
+        MiBtn = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
-        PBtn8 = new javax.swing.JButton();
-        PBtn9 = new javax.swing.JButton();
+        USBtn = new javax.swing.JButton();
+        SpBtn = new javax.swing.JButton();
 
         jButton1.setText("jButton1");
 
@@ -48,13 +48,13 @@ public class Ventana extends javax.swing.JFrame {
         jLabel5.setForeground(new java.awt.Color(153, 153, 153));
         jLabel5.setText("UliBaker :)");
 
-        PBtn.setBackground(new java.awt.Color(0, 0, 149));
-        PBtn.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
-        PBtn.setForeground(new java.awt.Color(255, 255, 255));
-        PBtn.setText("JUGAR!");
-        PBtn.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        PBtn.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        PBtn.addActionListener(this::PBtnActionPerformed);
+        UNBtn.setBackground(new java.awt.Color(0, 0, 149));
+        UNBtn.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
+        UNBtn.setForeground(new java.awt.Color(255, 255, 255));
+        UNBtn.setText("JUGAR!");
+        UNBtn.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        UNBtn.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        UNBtn.addActionListener(this::UNBtnActionPerformed);
 
         jLabel2.setForeground(new java.awt.Color(153, 153, 153));
         jLabel2.setText("193 paises miembros de la ONU.");
@@ -62,83 +62,83 @@ public class Ventana extends javax.swing.JFrame {
         jLabel3.setForeground(new java.awt.Color(153, 153, 153));
         jLabel3.setText("Estados con reconocimiento limitado.");
 
-        PBtn1.setBackground(new java.awt.Color(0, 0, 0));
-        PBtn1.setFont(new java.awt.Font("Consolas", 1, 16)); // NOI18N
-        PBtn1.setForeground(new java.awt.Color(255, 255, 255));
-        PBtn1.setText("Insular");
-        PBtn1.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        PBtn1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        PBtn1.addActionListener(this::PBtn1ActionPerformed);
+        IsBtn.setBackground(new java.awt.Color(0, 0, 0));
+        IsBtn.setFont(new java.awt.Font("Consolas", 1, 16)); // NOI18N
+        IsBtn.setForeground(new java.awt.Color(255, 255, 255));
+        IsBtn.setText("Islamico");
+        IsBtn.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        IsBtn.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        IsBtn.addActionListener(this::IsBtnActionPerformed);
 
         jLabel4.setForeground(new java.awt.Color(153, 153, 153));
         jLabel4.setText("Continetes*");
 
-        PBtn2.setBackground(new java.awt.Color(100, 100, 100));
-        PBtn2.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
-        PBtn2.setForeground(new java.awt.Color(255, 255, 255));
-        PBtn2.setText("JUGAR!");
-        PBtn2.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        PBtn2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        PBtn2.addActionListener(this::PBtn2ActionPerformed);
+        LRBtn.setBackground(new java.awt.Color(100, 100, 100));
+        LRBtn.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
+        LRBtn.setForeground(new java.awt.Color(255, 255, 255));
+        LRBtn.setText("JUGAR!");
+        LRBtn.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        LRBtn.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        LRBtn.addActionListener(this::LRBtnActionPerformed);
 
-        PBtn3.setBackground(new java.awt.Color(0, 0, 0));
-        PBtn3.setFont(new java.awt.Font("Consolas", 1, 16)); // NOI18N
-        PBtn3.setForeground(new java.awt.Color(255, 255, 255));
-        PBtn3.setText("Islamico");
-        PBtn3.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        PBtn3.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        PBtn3.addActionListener(this::PBtn3ActionPerformed);
+        LaBtn.setBackground(new java.awt.Color(0, 0, 0));
+        LaBtn.setFont(new java.awt.Font("Consolas", 1, 16)); // NOI18N
+        LaBtn.setForeground(new java.awt.Color(255, 255, 255));
+        LaBtn.setText("LATAM");
+        LaBtn.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        LaBtn.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        LaBtn.addActionListener(this::LaBtnActionPerformed);
 
-        PBtn4.setBackground(new java.awt.Color(0, 0, 0));
-        PBtn4.setFont(new java.awt.Font("Consolas", 1, 16)); // NOI18N
-        PBtn4.setForeground(new java.awt.Color(255, 255, 255));
-        PBtn4.setText("Asia");
-        PBtn4.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        PBtn4.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        PBtn4.addActionListener(this::PBtn4ActionPerformed);
+        AsBtn.setBackground(new java.awt.Color(0, 0, 0));
+        AsBtn.setFont(new java.awt.Font("Consolas", 1, 16)); // NOI18N
+        AsBtn.setForeground(new java.awt.Color(255, 255, 255));
+        AsBtn.setText("Asia");
+        AsBtn.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        AsBtn.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        AsBtn.addActionListener(this::AsBtnActionPerformed);
 
-        PBtn5.setBackground(new java.awt.Color(0, 0, 0));
-        PBtn5.setFont(new java.awt.Font("Consolas", 1, 16)); // NOI18N
-        PBtn5.setForeground(new java.awt.Color(255, 255, 255));
-        PBtn5.setText("Subsahariana");
-        PBtn5.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        PBtn5.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        PBtn5.addActionListener(this::PBtn5ActionPerformed);
+        SuBtn.setBackground(new java.awt.Color(0, 0, 0));
+        SuBtn.setFont(new java.awt.Font("Consolas", 1, 16)); // NOI18N
+        SuBtn.setForeground(new java.awt.Color(255, 255, 255));
+        SuBtn.setText("Subsahariana");
+        SuBtn.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        SuBtn.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        SuBtn.addActionListener(this::SuBtnActionPerformed);
 
-        PBtn6.setBackground(new java.awt.Color(0, 0, 0));
-        PBtn6.setFont(new java.awt.Font("Consolas", 1, 16)); // NOI18N
-        PBtn6.setForeground(new java.awt.Color(255, 255, 255));
-        PBtn6.setText("Occidente");
-        PBtn6.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        PBtn6.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        PBtn6.addActionListener(this::PBtn6ActionPerformed);
+        OcBtn.setBackground(new java.awt.Color(0, 0, 0));
+        OcBtn.setFont(new java.awt.Font("Consolas", 1, 16)); // NOI18N
+        OcBtn.setForeground(new java.awt.Color(255, 255, 255));
+        OcBtn.setText("Occidente");
+        OcBtn.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        OcBtn.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        OcBtn.addActionListener(this::OcBtnActionPerformed);
 
-        PBtn7.setBackground(new java.awt.Color(0, 0, 0));
-        PBtn7.setFont(new java.awt.Font("Consolas", 1, 16)); // NOI18N
-        PBtn7.setForeground(new java.awt.Color(255, 255, 255));
-        PBtn7.setText("LATAM");
-        PBtn7.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        PBtn7.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        PBtn7.addActionListener(this::PBtn7ActionPerformed);
+        MiBtn.setBackground(new java.awt.Color(0, 0, 0));
+        MiBtn.setFont(new java.awt.Font("Consolas", 1, 16)); // NOI18N
+        MiBtn.setForeground(new java.awt.Color(255, 255, 255));
+        MiBtn.setText("Misc.");
+        MiBtn.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        MiBtn.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        MiBtn.addActionListener(this::MiBtnActionPerformed);
 
         jLabel6.setForeground(new java.awt.Color(153, 153, 153));
         jLabel6.setText("Sub-nacionales.");
 
-        PBtn8.setBackground(new java.awt.Color(255, 0, 0));
-        PBtn8.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
-        PBtn8.setForeground(new java.awt.Color(255, 255, 255));
-        PBtn8.setText("JUGAR!");
-        PBtn8.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        PBtn8.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        PBtn8.addActionListener(this::PBtn8ActionPerformed);
+        USBtn.setBackground(new java.awt.Color(255, 0, 0));
+        USBtn.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
+        USBtn.setForeground(new java.awt.Color(255, 255, 255));
+        USBtn.setText("America");
+        USBtn.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        USBtn.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        USBtn.addActionListener(this::USBtnActionPerformed);
 
-        PBtn9.setBackground(new java.awt.Color(235, 235, 0));
-        PBtn9.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
-        PBtn9.setForeground(new java.awt.Color(255, 255, 255));
-        PBtn9.setText("JUGAR!");
-        PBtn9.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        PBtn9.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        PBtn9.addActionListener(this::PBtn9ActionPerformed);
+        SpBtn.setBackground(new java.awt.Color(204, 204, 0));
+        SpBtn.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
+        SpBtn.setForeground(new java.awt.Color(255, 255, 255));
+        SpBtn.setText("España");
+        SpBtn.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        SpBtn.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        SpBtn.addActionListener(this::SpBtnActionPerformed);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -152,29 +152,29 @@ public class Ventana extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(PBtn, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(UNBtn, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(PBtn2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(LRBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(PBtn8, javax.swing.GroupLayout.DEFAULT_SIZE, 185, Short.MAX_VALUE)
+                                .addComponent(USBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 185, Short.MAX_VALUE)
                                 .addGap(18, 18, 18)
-                                .addComponent(PBtn9, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(SpBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(PBtn7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(PBtn4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addComponent(MiBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(AsBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(PBtn1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(PBtn5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addComponent(IsBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(SuBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(PBtn3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(PBtn6, javax.swing.GroupLayout.DEFAULT_SIZE, 136, Short.MAX_VALUE))))))
+                                    .addComponent(LaBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(OcBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 136, Short.MAX_VALUE))))))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -185,29 +185,29 @@ public class Ventana extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(PBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(UNBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(PBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(LRBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(PBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(PBtn4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(PBtn3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(IsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(AsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(LaBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(PBtn5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(PBtn6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(PBtn7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(SuBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(OcBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MiBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(PBtn8, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(PBtn9, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(USBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(SpBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel5)
                 .addContainerGap())
@@ -216,61 +216,62 @@ public class Ventana extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void PBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PBtnActionPerformed
+    private void UNBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UNBtnActionPerformed
         this.dispose();
         new Juego().setVisible(true);
-    }//GEN-LAST:event_PBtnActionPerformed
+    }//GEN-LAST:event_UNBtnActionPerformed
 
-    private void PBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PBtn1ActionPerformed
+    private void IsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IsBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_PBtn1ActionPerformed
+    }//GEN-LAST:event_IsBtnActionPerformed
 
-    private void PBtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PBtn2ActionPerformed
+    private void LRBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LRBtnActionPerformed
         this.dispose();
         new JuegoLimRecon().setVisible(true);
-    }//GEN-LAST:event_PBtn2ActionPerformed
+    }//GEN-LAST:event_LRBtnActionPerformed
 
-    private void PBtn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PBtn3ActionPerformed
+    private void LaBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LaBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_PBtn3ActionPerformed
+    }//GEN-LAST:event_LaBtnActionPerformed
 
-    private void PBtn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PBtn4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_PBtn4ActionPerformed
+    private void AsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AsBtnActionPerformed
+        this.dispose();
+        new Asia().setVisible(true);
+    }//GEN-LAST:event_AsBtnActionPerformed
 
-    private void PBtn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PBtn5ActionPerformed
+    private void SuBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SuBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_PBtn5ActionPerformed
+    }//GEN-LAST:event_SuBtnActionPerformed
 
-    private void PBtn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PBtn6ActionPerformed
+    private void OcBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OcBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_PBtn6ActionPerformed
+    }//GEN-LAST:event_OcBtnActionPerformed
 
-    private void PBtn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PBtn7ActionPerformed
+    private void MiBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MiBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_PBtn7ActionPerformed
+    }//GEN-LAST:event_MiBtnActionPerformed
 
-    private void PBtn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PBtn8ActionPerformed
+    private void USBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_USBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_PBtn8ActionPerformed
+    }//GEN-LAST:event_USBtnActionPerformed
 
-    private void PBtn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PBtn9ActionPerformed
+    private void SpBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SpBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_PBtn9ActionPerformed
+    }//GEN-LAST:event_SpBtnActionPerformed
     public static void main(String args[]) {     
         java.awt.EventQueue.invokeLater(() -> new Ventana().setVisible(true));
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton PBtn;
-    private javax.swing.JButton PBtn1;
-    private javax.swing.JButton PBtn2;
-    private javax.swing.JButton PBtn3;
-    private javax.swing.JButton PBtn4;
-    private javax.swing.JButton PBtn5;
-    private javax.swing.JButton PBtn6;
-    private javax.swing.JButton PBtn7;
-    private javax.swing.JButton PBtn8;
-    private javax.swing.JButton PBtn9;
+    private javax.swing.JButton AsBtn;
+    private javax.swing.JButton IsBtn;
+    private javax.swing.JButton LRBtn;
+    private javax.swing.JButton LaBtn;
+    private javax.swing.JButton MiBtn;
+    private javax.swing.JButton OcBtn;
+    private javax.swing.JButton SpBtn;
+    private javax.swing.JButton SuBtn;
+    private javax.swing.JButton UNBtn;
+    private javax.swing.JButton USBtn;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
