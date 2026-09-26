@@ -232,7 +232,8 @@ public class Ventana extends javax.swing.JFrame {
     }//GEN-LAST:event_LRBtnActionPerformed
 
     private void LaBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LaBtnActionPerformed
-        // TODO add your handling code here:
+        this.dispose();
+        new Latam().setVisible(true);
     }//GEN-LAST:event_LaBtnActionPerformed
 
     private void AsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AsBtnActionPerformed

@@ -113,7 +113,7 @@ public class Juego extends javax.swing.JFrame {
         mapaBanderas.put(73, new String[]{"Grecia", "Atenas"});
         mapaBanderas.put(74, new String[]{"Guatemala", "Ciudad de Guatemala"});
         mapaBanderas.put(75, new String[]{"Guinea", "Conakri"});
-        mapaBanderas.put(76, new String[]{"Guinea Bisau", "Bisau"});
+        mapaBanderas.put(76, new String[]{"Guinea Bissau", "Bissau"});
         mapaBanderas.put(77, new String[]{"Guinea Ecuatorial", "Ciudad de la Paz"});
         mapaBanderas.put(78, new String[]{"Guyana", "Georgetown"});
         mapaBanderas.put(79, new String[]{"Haiti", "Puerto Príncipe"});

@@ -10,16 +10,16 @@ import javax.swing.ImageIcon;
  *
  * @author uli
  */
-public class JuegoLimRecon extends javax.swing.JFrame {
+public class Latam extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(JuegoLimRecon.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Latam.class.getName());
 
     private Map<Character, List<String>> dictionary;
     HashMap<Integer, String[]> mapaBanderas = new HashMap<>();
     private Generador<Integer> genBanderas;
     private int num = 0;
     
-    public JuegoLimRecon() {
+    public Latam() {
         initComponents();
         CBtn.registerKeyboardAction(
             e -> {
@@ -34,26 +34,34 @@ public class JuegoLimRecon extends javax.swing.JFrame {
         FlagLbl.setFont(new Font("Microsoft YaHei", Font.PLAIN, 250));   
         setLocationRelativeTo(null);
         setTitle("Capitales y Banderas!");
-        getContentPane().setBackground(new java.awt.Color(200, 200, 200));
+        getContentPane().setBackground(new java.awt.Color(250, 120, 70));
         ImageIcon icono = new ImageIcon(getClass().getClassLoader().getResource("0.png"));
         setIconImage(icono.getImage());
         
-        mapaBanderas.put(1, new String[]{"Kosovo", "Pristina"});
-        mapaBanderas.put(2, new String[]{"Palestina", "Jerusalen Este"});
-        mapaBanderas.put(3, new String[]{"Taiwan", "Taipei"});
-        mapaBanderas.put(4, new String[]{"Vaticano", "Vaticano"});
-        mapaBanderas.put(5, new String[]{"Republica Saharaui", "El Aaiun"});
-        mapaBanderas.put(6, new String[]{"Republica Turca de Chipre del Norte", "Nicosia Norte"});
-        mapaBanderas.put(7, new String[]{"Abjasia", "Sujumi"});
-        mapaBanderas.put(8, new String[]{"Osetia del Sur", "Tsjinval"});
-        mapaBanderas.put(9, new String[]{"Transnistria", "Tiraspol"});
-        mapaBanderas.put(10, new String[]{"Somalilandia", "Hargeisa"});
-        mapaBanderas.put(11, new String[]{"Republica de Artsaj", "Stepanakert"});
-        mapaBanderas.put(12, new String[]{"Kurdistan", "Erbil, Sanandaj, Qamishli, Diyarbakir"});
-        mapaBanderas.put(13, new String[]{"Republica de Srpska", "Sarajevo Este, Bania Luka"});
-        
+        mapaBanderas.put(1, new String[]{"Mexico", "Ciudad de Mexico"});
+        mapaBanderas.put(2, new String[]{"Guatemala", "Ciudad de Guatemala"});
+        mapaBanderas.put(3, new String[]{"El Salvador", "San Salvador"});
+        mapaBanderas.put(4, new String[]{"Honduras", "Distrito Central"});
+        mapaBanderas.put(5, new String[]{"Nicaragua", "Managua"});
+        mapaBanderas.put(6, new String[]{"Costa Rica", "San Jose"});
+        mapaBanderas.put(7, new String[]{"Panama", "Ciudad de Panama"});
+        mapaBanderas.put(8, new String[]{"Colombia", "Bogota"});
+        mapaBanderas.put(9, new String[]{"Venezuela", "Caracas"});
+        mapaBanderas.put(10, new String[]{"Ecuador", "Quito"});
+        mapaBanderas.put(11, new String[]{"Peru", "Lima"});
+        mapaBanderas.put(12, new String[]{"Bolivia", "La Paz, Sucre"});
+        mapaBanderas.put(13, new String[]{"Chile", "Santiago"});
+        mapaBanderas.put(14, new String[]{"Argentina", "Buenos Aires"});
+        mapaBanderas.put(15, new String[]{"Paraguay", "Asuncion"});
+        mapaBanderas.put(16, new String[]{"Uruguay", "Montevideo"});
+        mapaBanderas.put(17, new String[]{"Brasil", "Brasilia"});
+        mapaBanderas.put(18, new String[]{"Cuba", "La Habana"});
+        mapaBanderas.put(19, new String[]{"Haiti", "Puerto Principe"});
+        mapaBanderas.put(20, new String[]{"Republica Dominicana", "Santo Domingo"});
+        mapaBanderas.put(21, new String[]{"Puerto Rico", "San Juan"});
+
         Integer[] FlagArray = {
-            1,2,3,4,5,6,7,8,9,10,11,12
+            1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21
         };
         
         genBanderas = new Generador<>(FlagArray);
@@ -61,7 +69,7 @@ public class JuegoLimRecon extends javax.swing.JFrame {
         Generador<Integer> genBanderas = new Generador<>(FlagArray);
         FlagLbl.setText("");
         num = genBanderas.obtenerAleatorio();       
-        String ruta = "/limrecon/" + num + ".png";
+        String ruta = "/latam/" + num + ".png";
         ImageIcon icon = new ImageIcon(getClass().getResource(ruta));
         Image img = icon.getImage();
         FlagLbl.setIcon(new ImageIcon(img));
@@ -80,7 +88,7 @@ public class JuegoLimRecon extends javax.swing.JFrame {
         //num =197;
         NLbl.setText(""+num);
         HLbl.setText(mapaBanderas.get(num)[0].toLowerCase()+" "+mapaBanderas.get(num)[1].toLowerCase());
-        String ruta = "/limrecon/" + num + ".png";
+        String ruta = "/latam/" + num + ".png";
         ImageIcon icon = new ImageIcon(getClass().getResource(ruta));
         Image img = icon.getImage();
         Image imgEscalada = img.getScaledInstance(FlagLbl.getWidth(), FlagLbl.getHeight(), Image.SCALE_SMOOTH);
@@ -153,7 +161,7 @@ public class JuegoLimRecon extends javax.swing.JFrame {
         NLbl.setText("n");
 
         HLbl.setBackground(new java.awt.Color(255, 255, 255));
-        HLbl.setForeground(new java.awt.Color(210, 210, 210));
+        HLbl.setForeground(new java.awt.Color(245, 115, 65));
         HLbl.setText("Hola");
 
         jButton1.setText("Volver");
@@ -279,7 +287,7 @@ public class JuegoLimRecon extends javax.swing.JFrame {
         //</editor-fold>
         
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new JuegoLimRecon().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new Latam().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
