@@ -10,16 +10,16 @@ import javax.swing.ImageIcon;
  *
  * @author uli
  */
-public class JuegoLimRecon extends javax.swing.JFrame {
+public class Limrecon extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(JuegoLimRecon.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Limrecon.class.getName());
 
     private Map<Character, List<String>> dictionary;
     HashMap<Integer, String[]> mapaBanderas = new HashMap<>();
     private Generador<Integer> genBanderas;
     private int num = 0;
     
-    public JuegoLimRecon() {
+    public Limrecon() {
         initComponents();
         CBtn.registerKeyboardAction(
             e -> {
@@ -34,7 +34,7 @@ public class JuegoLimRecon extends javax.swing.JFrame {
         FlagLbl.setFont(new Font("Microsoft YaHei", Font.PLAIN, 250));   
         setLocationRelativeTo(null);
         setTitle("Capitales y Banderas!");
-        getContentPane().setBackground(new java.awt.Color(200, 200, 200));
+        getContentPane().setBackground(new java.awt.Color(150, 150, 150));
         ImageIcon icono = new ImageIcon(getClass().getClassLoader().getResource("0.png"));
         setIconImage(icono.getImage());
         
@@ -153,7 +153,7 @@ public class JuegoLimRecon extends javax.swing.JFrame {
         NLbl.setText("n");
 
         HLbl.setBackground(new java.awt.Color(255, 255, 255));
-        HLbl.setForeground(new java.awt.Color(210, 210, 210));
+        HLbl.setForeground(new java.awt.Color(145, 145, 145));
         HLbl.setText("Hola");
 
         jButton1.setText("Volver");
@@ -279,7 +279,7 @@ public class JuegoLimRecon extends javax.swing.JFrame {
         //</editor-fold>
         
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new JuegoLimRecon().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new Limrecon().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

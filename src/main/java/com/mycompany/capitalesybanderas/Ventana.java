@@ -35,6 +35,7 @@ public class Ventana extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         USBtn = new javax.swing.JButton();
         SpBtn = new javax.swing.JButton();
+        OSBtn = new javax.swing.JButton();
 
         jButton1.setText("jButton1");
 
@@ -132,13 +133,20 @@ public class Ventana extends javax.swing.JFrame {
         USBtn.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         USBtn.addActionListener(this::USBtnActionPerformed);
 
-        SpBtn.setBackground(new java.awt.Color(204, 204, 0));
+        SpBtn.setBackground(new java.awt.Color(235, 235, 0));
         SpBtn.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
-        SpBtn.setForeground(new java.awt.Color(255, 255, 255));
         SpBtn.setText("España");
         SpBtn.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         SpBtn.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         SpBtn.addActionListener(this::SpBtnActionPerformed);
+
+        OSBtn.setBackground(new java.awt.Color(51, 153, 255));
+        OSBtn.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
+        OSBtn.setForeground(new java.awt.Color(255, 255, 255));
+        OSBtn.setText("Ultramar");
+        OSBtn.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        OSBtn.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        OSBtn.addActionListener(this::OSBtnActionPerformed);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -160,9 +168,11 @@ public class Ventana extends javax.swing.JFrame {
                             .addComponent(LRBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(USBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 185, Short.MAX_VALUE)
-                                .addGap(18, 18, 18)
-                                .addComponent(SpBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(USBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(SpBtn)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(OSBtn))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(MiBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -207,7 +217,8 @@ public class Ventana extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(USBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(SpBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(SpBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(OSBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel5)
                 .addContainerGap())
@@ -228,7 +239,7 @@ public class Ventana extends javax.swing.JFrame {
 
     private void LRBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LRBtnActionPerformed
         this.dispose();
-        new JuegoLimRecon().setVisible(true);
+        new Limrecon().setVisible(true);
     }//GEN-LAST:event_LRBtnActionPerformed
 
     private void LaBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LaBtnActionPerformed
@@ -260,6 +271,10 @@ public class Ventana extends javax.swing.JFrame {
     private void SpBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SpBtnActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_SpBtnActionPerformed
+
+    private void OSBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OSBtnActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_OSBtnActionPerformed
     public static void main(String args[]) {     
         java.awt.EventQueue.invokeLater(() -> new Ventana().setVisible(true));
     }
@@ -269,6 +284,7 @@ public class Ventana extends javax.swing.JFrame {
     private javax.swing.JButton LRBtn;
     private javax.swing.JButton LaBtn;
     private javax.swing.JButton MiBtn;
+    private javax.swing.JButton OSBtn;
     private javax.swing.JButton OcBtn;
     private javax.swing.JButton SpBtn;
     private javax.swing.JButton SuBtn;
