@@ -253,7 +253,8 @@ public class Ventana extends javax.swing.JFrame {
     }//GEN-LAST:event_AsBtnActionPerformed
 
     private void SuBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SuBtnActionPerformed
-        // TODO add your handling code here:
+        this.dispose();
+        new Subsah().setVisible(true);
     }//GEN-LAST:event_SuBtnActionPerformed
 
     private void OcBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OcBtnActionPerformed

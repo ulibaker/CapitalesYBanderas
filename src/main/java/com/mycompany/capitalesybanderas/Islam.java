@@ -34,7 +34,7 @@ public class Islam extends javax.swing.JFrame {
         FlagLbl.setFont(new Font("Microsoft YaHei", Font.PLAIN, 250));   
         setLocationRelativeTo(null);
         setTitle("Capitales y Banderas!");
-        getContentPane().setBackground(new java.awt.Color(100, 255, 050));
+        getContentPane().setBackground(new java.awt.Color(020, 075, 020));
         ImageIcon icono = new ImageIcon(getClass().getClassLoader().getResource("0.png"));
         setIconImage(icono.getImage());
         
@@ -153,10 +153,11 @@ public class Islam extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Introduce el país y la capital según la bandera:");
 
-        jLabel5.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("UliBaker :)");
 
         FlagLbl.setFont(new java.awt.Font("Segoe UI", 0, 200)); // NOI18N
@@ -180,20 +181,22 @@ public class Islam extends javax.swing.JFrame {
         WLbl.setText("Incorrecto!");
 
         PLbl1.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        PLbl1.setForeground(new java.awt.Color(255, 255, 255));
         PLbl1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         PLbl1.setText("País:");
 
         PLbl2.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        PLbl2.setForeground(new java.awt.Color(255, 255, 255));
         PLbl2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         PLbl2.setText("Capital:");
 
         NLbl.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
-        NLbl.setForeground(new java.awt.Color(102, 102, 102));
+        NLbl.setForeground(new java.awt.Color(255, 255, 255));
         NLbl.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         NLbl.setText("n");
 
         HLbl.setBackground(new java.awt.Color(255, 255, 255));
-        HLbl.setForeground(new java.awt.Color(90, 240, 40));
+        HLbl.setForeground(new java.awt.Color(25, 65, 25));
         HLbl.setText("Hola");
 
         jButton1.setText("Volver");

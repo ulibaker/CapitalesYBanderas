@@ -66,7 +66,7 @@ public class Juego extends javax.swing.JFrame {
         mapaBanderas.put(26, new String[]{"Brunei", "Bandar Seri Begawan"});
         mapaBanderas.put(27, new String[]{"Bulgaria", "Sofia"});
         mapaBanderas.put(28, new String[]{"Burkina Faso", "Uagadugu"});
-        mapaBanderas.put(29, new String[]{"Burundi", "Gitega"});
+        mapaBanderas.put(29, new String[]{"Burundi", "Guitega"});
         mapaBanderas.put(30, new String[]{"Butan", "Timbu"});
         mapaBanderas.put(31, new String[]{"Cabo Verde", "Praia"});
         mapaBanderas.put(32, new String[]{"Camboya", "Nom Pen"});
@@ -83,7 +83,7 @@ public class Juego extends javax.swing.JFrame {
         mapaBanderas.put(43, new String[]{"Congo", "Brazzaville"});
         mapaBanderas.put(44, new String[]{"Corea", "Seul"});
         mapaBanderas.put(45, new String[]{"Corea del Norte", "Pyongyang"});
-        mapaBanderas.put(46, new String[]{"Costa de Marfil", "Yamoussoukro"});
+        mapaBanderas.put(46, new String[]{"Costa de Marfil", "Yamusukro"});
         mapaBanderas.put(47, new String[]{"Costa Rica", "San Jose"});
         mapaBanderas.put(48, new String[]{"Croacia", "Zagreb"});
         mapaBanderas.put(49, new String[]{"Cuba", "La Habana"});
@@ -186,7 +186,7 @@ public class Juego extends javax.swing.JFrame {
         mapaBanderas.put(146, new String[]{"Portugal", "Lisboa"});
         mapaBanderas.put(147, new String[]{"Reino Unido", "Londres"});
         mapaBanderas.put(148, new String[]{"Republica Centroafricana", "Bangui"});
-        mapaBanderas.put(149, new String[]{"Republica Democratica del Congo", "Kinshasa"});
+        mapaBanderas.put(149, new String[]{"Republica Democratica del Congo", "Kinsasa"});
         mapaBanderas.put(150, new String[]{"Republica Dominicana", "Santo Domingo"});
         mapaBanderas.put(151, new String[]{"Rumania", "Bucarest"});
         mapaBanderas.put(152, new String[]{"Ruanda", "Kigali"});
@@ -207,7 +207,7 @@ public class Juego extends javax.swing.JFrame {
         mapaBanderas.put(167, new String[]{"Sri Lanka", "Sri Jayawardenapura Kotte"});
         mapaBanderas.put(168, new String[]{"Sudafrica", "Bloemfontein, Cape Town, Pretoria"});
         mapaBanderas.put(169, new String[]{"Sudan", "Jartum"});
-        mapaBanderas.put(170, new String[]{"Sudan del Sur", "Juba"});
+        mapaBanderas.put(170, new String[]{"Sudan del Sur", "Yuba"});
         mapaBanderas.put(171, new String[]{"Suecia", "Estocolmo"});
         mapaBanderas.put(172, new String[]{"Suiza", "Berna"});
         mapaBanderas.put(173, new String[]{"Surinam", "Paramaribo"});
@@ -239,16 +239,18 @@ public class Juego extends javax.swing.JFrame {
         //99 kosovo
         //140 palestina
         //175 taiwan
-        //191 vaticano
+        //191 vaticano LIM-REC
         Integer[] FlagArray = {
             1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,
             26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,
             51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,
-            76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,100,
-            101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,
-            126,127,128,129,130,131,132,133,134,135,136,137,138,139,141,142,143,144,145,146,147,148,149,150,
-            151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,
-            176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,192,193,194,195,196,197
+            76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,/**/
+            100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,
+            120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,/**/
+            141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,
+            163,164,165,166,167,168,169,170,171,172,173,174,/**/
+            176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,/**/
+            192,193,194,195,196,197
         };
         
         genBanderas = new Generador<>(FlagArray);

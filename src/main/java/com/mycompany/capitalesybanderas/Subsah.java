@@ -10,16 +10,16 @@ import javax.swing.ImageIcon;
  *
  * @author uli
  */
-public class Limrecon extends javax.swing.JFrame {
+public class Subsah extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Limrecon.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Subsah.class.getName());
 
     private Map<Character, List<String>> dictionary;
     HashMap<Integer, String[]> mapaBanderas = new HashMap<>();
     private Generador<Integer> genBanderas;
     private int num = 0;
     
-    public Limrecon() {
+    public Subsah() {
         initComponents();
         CBtn.registerKeyboardAction(
             e -> {
@@ -34,26 +34,47 @@ public class Limrecon extends javax.swing.JFrame {
         FlagLbl.setFont(new Font("Microsoft YaHei", Font.PLAIN, 250));   
         setLocationRelativeTo(null);
         setTitle("Capitales y Banderas!");
-        getContentPane().setBackground(new java.awt.Color(150, 150, 150));
+        getContentPane().setBackground(new java.awt.Color(20, 20, 20));
         ImageIcon icono = new ImageIcon(getClass().getClassLoader().getResource("0.png"));
         setIconImage(icono.getImage());
         
-        mapaBanderas.put(1, new String[]{"Kosovo", "Pristina"});
-        mapaBanderas.put(2, new String[]{"Palestina", "Jerusalen Este"});
-        mapaBanderas.put(3, new String[]{"Taiwan", "Taipei"});
-        mapaBanderas.put(4, new String[]{"Vaticano", "Vaticano"});
-        mapaBanderas.put(5, new String[]{"Republica Saharaui", "El Aaiun"});
-        mapaBanderas.put(6, new String[]{"Republica Turca de Chipre del Norte", "Nicosia Norte"});
-        mapaBanderas.put(7, new String[]{"Abjasia", "Sujumi"});
-        mapaBanderas.put(8, new String[]{"Osetia del Sur", "Tsjinval"});
-        mapaBanderas.put(9, new String[]{"Transnistria", "Tiraspol"});
-        mapaBanderas.put(10, new String[]{"Somalilandia", "Hargeisa"});
-        mapaBanderas.put(11, new String[]{"Republica de Artsaj", "Stepanakert"});
-        mapaBanderas.put(12, new String[]{"Kurdistan", "Erbil, Sanandaj, Qamishli, Diyarbakir"});
-        mapaBanderas.put(13, new String[]{"Republica de Srpska", "Sarajevo Este, Bania Luka"});
+        mapaBanderas.put(1, new String[]{"Guinea Bissau", "Bissau"});
+        mapaBanderas.put(2, new String[]{"Liberia", "Monrovia"});
+        mapaBanderas.put(3, new String[]{"Costa de Marfil", "Yamusukro"});
+        mapaBanderas.put(4, new String[]{"Ghana", "Acra"});
+        mapaBanderas.put(5, new String[]{"Togo", "Lome"});
+        mapaBanderas.put(6, new String[]{"Benin", "Porto Novo"});
+        mapaBanderas.put(7, new String[]{"Camerun", "Yaunde"});
+        mapaBanderas.put(8, new String[]{"Republica Centroafricana", "Bangui"});
+        mapaBanderas.put(9, new String[]{"Sudan del Sur", "Yuba"});
+        mapaBanderas.put(10, new String[]{"Etiopia", "Adis Abeba"});
+        mapaBanderas.put(11, new String[]{"Kenia", "Nairobi"});
+        mapaBanderas.put(12, new String[]{"Uganda", "Kampala"});
+        mapaBanderas.put(13, new String[]{"Republica Democratica del Congo", "Kinsasa"});
+        mapaBanderas.put(14, new String[]{"Congo", "Brazzaville"});
+        mapaBanderas.put(15, new String[]{"Gabon", "Libreville"});
+        mapaBanderas.put(16, new String[]{"Angola", "Luanda"});
+        mapaBanderas.put(17, new String[]{"Zambia", "Lusaka"});
+        mapaBanderas.put(18, new String[]{"Ruanda", "Kigali"});
+        mapaBanderas.put(19, new String[]{"Burundi", "Guitega"});
+        mapaBanderas.put(20, new String[]{"Malaui", "Lilongue"});
+        mapaBanderas.put(21, new String[]{"Tanzania", "Dodoma"});
+        mapaBanderas.put(22, new String[]{"Mozambique", "Maputo"});
+        mapaBanderas.put(23, new String[]{"Zimbabue", "Harare"});
+        mapaBanderas.put(24, new String[]{"Botsuana", "Gaborone"});
+        mapaBanderas.put(25, new String[]{"Namibia", "Windhoek"});
+        mapaBanderas.put(26, new String[]{"Sudafrica", "Bloemfontein, Cape Town, Pretoria"});
+        mapaBanderas.put(27, new String[]{"Lesoto", "Maseru"});
+        mapaBanderas.put(28, new String[]{"Esuatini", "Lobamba, Mbabane"});
+        mapaBanderas.put(29, new String[]{"Madagascar", "Antananarivo"});
+        mapaBanderas.put(30, new String[]{"Cabo Verde", "Praia"});
+        mapaBanderas.put(31, new String[]{"Santo Tome y Principe", "Santo Tome"});
+        mapaBanderas.put(32, new String[]{"Mauricio", "Port Louis"});
+        mapaBanderas.put(33, new String[]{"Seychelles", "Victoria"});
         
         Integer[] FlagArray = {
-            1,2,3,4,5,6,7,8,9,10,11,12,13
+            1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25
+                ,26,27,28,29,30,31,32,33
         };
         
         genBanderas = new Generador<>(FlagArray);
@@ -61,7 +82,7 @@ public class Limrecon extends javax.swing.JFrame {
         Generador<Integer> genBanderas = new Generador<>(FlagArray);
         FlagLbl.setText("");
         num = genBanderas.obtenerAleatorio();       
-        String ruta = "/limrecon/" + num + ".png";
+        String ruta = "/subsah/" + num + ".png";
         ImageIcon icon = new ImageIcon(getClass().getResource(ruta));
         Image img = icon.getImage();
         FlagLbl.setIcon(new ImageIcon(img));
@@ -80,7 +101,7 @@ public class Limrecon extends javax.swing.JFrame {
         //num =197;
         NLbl.setText(""+num);
         HLbl.setText(mapaBanderas.get(num)[0].toLowerCase()+" "+mapaBanderas.get(num)[1].toLowerCase());
-        String ruta = "/limrecon/" + num + ".png";
+        String ruta = "/subsah/" + num + ".png";
         ImageIcon icon = new ImageIcon(getClass().getResource(ruta));
         Image img = icon.getImage();
         Image imgEscalada = img.getScaledInstance(FlagLbl.getWidth(), FlagLbl.getHeight(), Image.SCALE_SMOOTH);
@@ -113,10 +134,11 @@ public class Limrecon extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Introduce el país y la capital según la bandera:");
 
-        jLabel5.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel5.setForeground(new java.awt.Color(204, 204, 204));
         jLabel5.setText("UliBaker :)");
 
         FlagLbl.setFont(new java.awt.Font("Segoe UI", 0, 200)); // NOI18N
@@ -140,20 +162,22 @@ public class Limrecon extends javax.swing.JFrame {
         WLbl.setText("Incorrecto!");
 
         PLbl1.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        PLbl1.setForeground(new java.awt.Color(255, 255, 255));
         PLbl1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         PLbl1.setText("País:");
 
         PLbl2.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        PLbl2.setForeground(new java.awt.Color(255, 255, 255));
         PLbl2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         PLbl2.setText("Capital:");
 
         NLbl.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
-        NLbl.setForeground(new java.awt.Color(102, 102, 102));
+        NLbl.setForeground(new java.awt.Color(204, 204, 204));
         NLbl.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         NLbl.setText("n");
 
         HLbl.setBackground(new java.awt.Color(255, 255, 255));
-        HLbl.setForeground(new java.awt.Color(145, 145, 145));
+        HLbl.setForeground(new java.awt.Color(25, 25, 25));
         HLbl.setText("Hola");
 
         jButton1.setText("Volver");
@@ -279,7 +303,7 @@ public class Limrecon extends javax.swing.JFrame {
         //</editor-fold>
         
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new Limrecon().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new Subsah().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
