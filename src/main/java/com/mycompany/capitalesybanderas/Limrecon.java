@@ -40,7 +40,7 @@ public class Limrecon extends javax.swing.JFrame {
         
         mapaBanderas.put(1, new String[]{"Kosovo", "Pristina"});
         mapaBanderas.put(2, new String[]{"Palestina", "Jerusalen Este"});
-        mapaBanderas.put(3, new String[]{"Taiwan", "Taipei"});
+        mapaBanderas.put(3, new String[]{"Republica de China", "Taipei"});
         mapaBanderas.put(4, new String[]{"Vaticano", "Vaticano"});
         mapaBanderas.put(5, new String[]{"Republica Saharaui", "El Aaiun"});
         mapaBanderas.put(6, new String[]{"Republica Turca de Chipre del Norte", "Nicosia Norte"});

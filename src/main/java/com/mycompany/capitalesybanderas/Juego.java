@@ -48,7 +48,7 @@ public class Juego extends javax.swing.JFrame {
         mapaBanderas.put(8, new String[]{"Argelia", "Argel"});
         mapaBanderas.put(9, new String[]{"Argentina", "Buenos Aires"});
         mapaBanderas.put(10, new String[]{"Armenia", "Erevan"});
-        mapaBanderas.put(11, new String[]{"Australia", "Canberra"});
+        mapaBanderas.put(11, new String[]{"Australia", "Camberra"});
         mapaBanderas.put(12, new String[]{"Austria", "Viena"});
         mapaBanderas.put(13, new String[]{"Azerbaiyan", "Baku"});
         mapaBanderas.put(14, new String[]{"Bahamas", "Nasau"});
@@ -97,7 +97,7 @@ public class Juego extends javax.swing.JFrame {
         mapaBanderas.put(57, new String[]{"Eslovaquia", "Bratislava"});
         mapaBanderas.put(58, new String[]{"Eslovenia", "Liubliana"});
         mapaBanderas.put(59, new String[]{"España", "Madrid"});
-        mapaBanderas.put(60, new String[]{"Estados Unidos", "Washington D. C."});
+        mapaBanderas.put(60, new String[]{"America", "Washington D. C."});
         mapaBanderas.put(61, new String[]{"Estonia", "Talin"});
         mapaBanderas.put(62, new String[]{"Esuatini", "Lobamba, Mbabane"});
         mapaBanderas.put(63, new String[]{"Etiopia", "Adis Abeba"});
@@ -209,7 +209,7 @@ public class Juego extends javax.swing.JFrame {
         mapaBanderas.put(169, new String[]{"Sudan", "Jartum"});
         mapaBanderas.put(170, new String[]{"Sudan del Sur", "Yuba"});
         mapaBanderas.put(171, new String[]{"Suecia", "Estocolmo"});
-        mapaBanderas.put(172, new String[]{"Suiza", "Berna"});
+        mapaBanderas.put(172, new String[]{"Suiza", "404"});
         mapaBanderas.put(173, new String[]{"Surinam", "Paramaribo"});
         mapaBanderas.put(174, new String[]{"Tailandia", "Bangkok"});
         //mapaBanderas.put(175, new String[]{"Taiwan", "Taipei"});
