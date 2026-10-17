@@ -116,7 +116,7 @@ public class Limrecon extends javax.swing.JFrame {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Introduce el país y la capital según la bandera:");
 
-        jLabel5.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("UliBaker :)");
 
         FlagLbl.setFont(new java.awt.Font("Segoe UI", 0, 200)); // NOI18N

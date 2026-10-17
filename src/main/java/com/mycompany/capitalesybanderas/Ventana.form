@@ -49,28 +49,25 @@
                           <Component id="jLabel4" alignment="0" max="32767" attributes="0"/>
                           <Component id="LRBtn" alignment="0" max="32767" attributes="0"/>
                           <Component id="jLabel6" alignment="0" max="32767" attributes="0"/>
-                          <Group type="102" alignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="AsBtn" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="IsBtn" min="-2" pref="138" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="LaBtn" min="-2" pref="136" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
                               <Component id="USBtn" min="-2" pref="134" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="SpBtn" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="OSBtn" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="MiBtn" max="32767" attributes="0"/>
-                                  <Component id="AsBtn" max="32767" attributes="0"/>
-                              </Group>
+                          <Group type="102" attributes="0">
+                              <Component id="SuBtn" min="-2" pref="183" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="IsBtn" max="32767" attributes="0"/>
-                                  <Component id="SuBtn" alignment="0" max="32767" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="LaBtn" max="32767" attributes="0"/>
-                                  <Component id="OcBtn" pref="136" max="32767" attributes="0"/>
-                              </Group>
+                              <Component id="OcBtn" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -104,7 +101,6 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="SuBtn" alignment="0" min="-2" pref="50" max="-2" attributes="0"/>
                   <Component id="OcBtn" alignment="0" min="-2" pref="50" max="-2" attributes="0"/>
-                  <Component id="MiBtn" alignment="0" min="-2" pref="50" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
@@ -161,17 +157,17 @@
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="99" green="99" red="99" type="rgb"/>
+          <Color blue="33" green="33" red="33" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="193 paises miembros de la ONU."/>
+        <Property name="text" type="java.lang.String" value="193 paises miembros de la ONU:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="99" green="99" red="99" type="rgb"/>
+          <Color blue="33" green="33" red="33" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Estados con reconocimiento limitado."/>
+        <Property name="text" type="java.lang.String" value="Estados con reconocimiento limitado:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="IsBtn">
@@ -196,9 +192,9 @@
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="99" green="99" red="99" type="rgb"/>
+          <Color blue="33" green="33" red="33" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Continetes*"/>
+        <Property name="text" type="java.lang.String" value="Continetes*:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="LRBtn">
@@ -296,31 +292,12 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="OcBtnActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="MiBtn">
-      <Properties>
-        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="0" green="0" red="0" type="rgb"/>
-        </Property>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Consolas" size="16" style="1"/>
-        </Property>
-        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="ff" red="ff" type="rgb"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Misc."/>
-        <Property name="verticalAlignment" type="int" value="3"/>
-        <Property name="verticalTextPosition" type="int" value="3"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MiBtnActionPerformed"/>
-      </Events>
-    </Component>
     <Component class="javax.swing.JLabel" name="jLabel6">
       <Properties>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="99" green="99" red="99" type="rgb"/>
+          <Color blue="33" green="33" red="33" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Sub-nacionales."/>
+        <Property name="text" type="java.lang.String" value="Sub-nacionales:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="USBtn">
